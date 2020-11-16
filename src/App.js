@@ -53,24 +53,29 @@ export default class App extends Component {
       let temp;
       switch (operation) {
         case "+":
-          temp =
-            parseFloat(this.state.temp) + parseFloat(this.state.screenInput);
+          temp = (
+            parseFloat(this.state.temp) + parseFloat(this.state.screenInput)
+          ).toFixed(2);
           break;
         case "-":
-          temp =
-            parseFloat(this.state.temp) - parseFloat(this.state.screenInput);
+          temp = (
+            parseFloat(this.state.temp) - parseFloat(this.state.screenInput)
+          ).toFixed(2);
           break;
         case "*":
-          temp =
-            parseFloat(this.state.temp) * parseFloat(this.state.screenInput);
+          temp = (
+            parseFloat(this.state.temp) * parseFloat(this.state.screenInput)
+          ).toFixed(2);
           break;
         case "/":
-          temp =
-            parseFloat(this.state.temp) / parseFloat(this.state.screenInput);
+          temp = (
+            parseFloat(this.state.temp) / parseFloat(this.state.screenInput)
+          ).toFixed(2);
           break;
         case "%":
-          temp =
-            parseFloat(this.state.temp) % parseFloat(this.state.screenInput);
+          temp = (
+            parseFloat(this.state.temp) % parseFloat(this.state.screenInput)
+          ).toFixed(2);
           break;
         default:
           temp = "0";
